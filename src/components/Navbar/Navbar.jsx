@@ -19,7 +19,7 @@ const NavBar = () => {
         <nav className={`${color ? "bg-blue-900" : ""} 
                        Navbar duration-500 flex justify-between py-3 px-[4rem] z-[10] bg-no-repeat object-fill fixed w-[100vw]  max-[500px]:pt-8    
                        `}>
-            <a href='#1'><img className="w-[10rem] max-[500px]:ml-[3rem]" src={logo} ></img></a>
+            <Link to={'/'}><img className="w-[10rem] max-[500px]:ml-[3rem]" src={logo} ></img></Link>
             <ul className="flex gap-10 items-center justify-center max-[500px]:hidden">
                 <li className='hover:text-blue-500 duration-500'><Link to={"/Write-a-review"}>Write a review</Link></li>
                 <li className='hover:text-blue-500 duration-500'><Link to={"/for-startups"}>For Startups</Link></li>
